@@ -1,5 +1,5 @@
 {
-    "name": "snailweb/php-tests",
+    "name": "snailweb/php-tests-helpers",
     "description": "PHP tests helpers",
     "type": "library",
     "authors": [
