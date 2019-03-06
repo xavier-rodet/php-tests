@@ -4,7 +4,7 @@ Helpers for PHP tests
 ## Usage
 
 ### AccessProtectedTrait
-Helper to invoke methods and get/set attributes values with private/protected visibility
+Helper to invoke methods and to get/set attributes values with private/protected visibility
 
 ```
 <?php
@@ -32,7 +32,7 @@ class MyClassTest
 Helper to automatically apply Iterator tests for a class.
 
 Requirements :
-* The tested class tested must implement Iterator (that's the point of doing this ...)
+* The tested class must implement Iterator (that's the point of doing this ...)
 * The tested class must use an iteration key named 'key'
 
 ```
