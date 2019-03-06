@@ -1,0 +1,26 @@
+{
+    "name": "snailweb/php-tests",
+    "description": "PHP tests helpers",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Xavier RODET",
+            "email": "xavier.rodet@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.14"
+    },
+    "config": {
+        "platform": {
+            "php": "7.3.1"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Snailweb\\Tests\\": "src/"
+        }
+    }
+}
