@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Snailweb\Tests;
+namespace Snailweb\Helpers\Tests;
 
 trait AccessProtectedTrait
 {
