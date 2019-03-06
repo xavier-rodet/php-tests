@@ -11,7 +11,7 @@ Helper to invoke methods and to get/set attributes values with private/protected
 
 class MyClassTest
 {
-    use Snailweb\Tests\AccessProtectedTrait;
+    use Snailweb\Helpers\Tests\AccessProtectedTrait;
 
     public function testMyMethod()
     {
@@ -40,7 +40,7 @@ Requirements :
 
 class MyClassTest extends TestCase
 {
-    use Snailweb\Tests\TestIteratorTrait;
+    use Snailweb\Helpers\Tests\TestIteratorTrait;
     
     public function setUp(): void
     {
@@ -58,7 +58,7 @@ Note: if you need to test the constructor of your class you must do this :
 
 class MyClassTest extends TestCase
 {
-    use Snailweb\Tests\TestIteratorTrait{
+    use Snailweb\Helpers\Tests\TestIteratorTrait{
         testConstruct as testIteratorConstruct;
     }
     
