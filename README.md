@@ -1,4 +1,4 @@
-# php-tests
+# php-tests-helpers
 Helpers for PHP tests
 
 ## Usage
