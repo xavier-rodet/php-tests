@@ -34,6 +34,7 @@ Helper to automatically apply Iterator tests for a class.
 Requirements :
 * The tested class must implement Iterator (that's the point of doing this ...)
 * The tested class must use an iteration key named 'key'
+* The test class must instanciate the tested class into a private attributed called 'iterator'
 
 ```
 <?php
