@@ -81,7 +81,7 @@ class MyClassTest extends TestCase
 ```
 
 
-### TestSubjectTrait
+### TestSplSubjectTrait
 Helper to automatically apply SplSubject tests for a class.
 
 Requirements :
@@ -93,7 +93,7 @@ Requirements :
 
 class MyClassTest extends TestCase
 {
-    use Snailweb\Helpers\Tests\TestIteratorTrait;
+    use Snailweb\Helpers\Tests\TestSplSubjectTrait;
     
     public function setUp(): void
     {

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Snailweb\Helpers\Tests;
 
-trait TestSubjectTrait
+trait TestSplSubjectTrait
 {
     use AccessProtectedTrait;
 

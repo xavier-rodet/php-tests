@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Snailweb\Helpers\Tests\Tests\TestSubjectTrait\Sample;
+namespace Snailweb\Helpers\Tests\Tests\TestSplSubjectTrait\Sample;
 
 class DefaultSubject implements \SplSubject
 {

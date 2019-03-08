@@ -2,18 +2,18 @@
 
 declare(strict_types=1);
 
-namespace Snailweb\Helpers\Tests\Tests\TestSubjectTrait;
+namespace Snailweb\Helpers\Tests\Tests\TestSplSubjectTrait;
 
 use PHPUnit\Framework\TestCase;
-use Snailweb\Helpers\Tests\Tests\TestSubjectTrait\Sample\DefaultSubject;
-use Snailweb\Helpers\Tests\TestSubjectTrait;
+use Snailweb\Helpers\Tests\Tests\TestSplSubjectTrait\Sample\DefaultSubject;
+use Snailweb\Helpers\Tests\TestSplSubjectTrait;
 
 /**
  * @internal
  */
 class DefaultSubjectTest extends TestCase
 {
-    use TestSubjectTrait;
+    use TestSplSubjectTrait;
 
     public function setUp(): void
     {
