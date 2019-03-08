@@ -97,7 +97,7 @@ class MyClassTest extends TestCase
     
     public function setUp(): void
     {
-        $this->setUpSplSubject(CustomSubject::class, 'observers');
+        $this->setUpSplSubject(MyClass::class, 'observers');
     }
 
     // Do your methods tests
