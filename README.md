@@ -33,8 +33,7 @@ Helper to automatically apply Iterator tests for a class.
 
 Requirements :
 * The tested class must implement Iterator (that's the point of doing this ...)
-* The tested class must use an iteration key named 'key'
-* The test class must instanciate the tested class into a private attributed called 'iterator'
+* The test class must call setUpInterator() with class name, and optionally key name and array name (example shows defaults)
 
 ```
 <?php
@@ -45,7 +44,7 @@ class MyClassTest extends TestCase
     
     public function setUp(): void
     {
-        $this->iterator = new MyClass();
+        $this->setUpIterator(MyClass::class, 'key', 'array');
     }
 
     // Do your methods tests
@@ -65,7 +64,7 @@ class MyClassTest extends TestCase
     
     public function setUp(): void
     {
-        $this->iterator = new MyClass();
+        $this->setUpIterator(MyClass::class, 'key', 'array');
     }
 
     public function testConstruct()
@@ -74,6 +73,31 @@ class MyClassTest extends TestCase
 
         // Do your constructor tests
         // ...
+    }
+
+    // Do your methods tests
+    // ...
+}
+```
+
+
+### TestSubjectTrait
+Helper to automatically apply SplSubject tests for a class.
+
+Requirements :
+* The tested class must implement SplSubject (that's the point of doing this ...)
+* The test class must call setUpSplSubject() with class name, and optionally observers name (example shows defaults)
+
+```
+<?php
+
+class MyClassTest extends TestCase
+{
+    use Snailweb\Helpers\Tests\TestIteratorTrait;
+    
+    public function setUp(): void
+    {
+        $this->setUpSplSubject(CustomSubject::class, 'observers');
     }
 
     // Do your methods tests

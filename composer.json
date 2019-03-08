@@ -11,7 +11,8 @@
     "minimum-stability": "stable",
     "require": {},
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.14"
+        "friendsofphp/php-cs-fixer": "^2.14",
+        "phpunit/phpunit": "^8.0"
     },
     "config": {
         "platform": {
@@ -21,6 +22,11 @@
     "autoload": {
         "psr-4": {
             "Snailweb\\Helpers\\Tests\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Snailweb\\Helpers\\Tests\\Tests\\": "tests/"
         }
     }
 }
