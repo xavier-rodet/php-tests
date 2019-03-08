@@ -6,9 +6,7 @@ Helpers for PHP tests
 ### AccessProtectedTrait
 Helper to invoke methods and to get/set attributes values with private/protected visibility
 
-```
-<?php
-
+```php
 class MyClassTest
 {
     use Snailweb\Helpers\Tests\AccessProtectedTrait;
@@ -36,9 +34,7 @@ Requirements :
 * The tested class constructor must accept no parameters
 * The test class must call setUpInterator() with class name, and optionally key name and array name (example shows defaults)
 
-```
-<?php
-
+```php
 class MyClassTest extends TestCase
 {
     use Snailweb\Helpers\Tests\TestIteratorTrait;
@@ -54,9 +50,7 @@ class MyClassTest extends TestCase
 ```
 
 Note: if you need to test the constructor of your class you must do this :
-```
-<?php
-
+```php
 class MyClassTest extends TestCase
 {
     use Snailweb\Helpers\Tests\TestIteratorTrait{
@@ -90,9 +84,7 @@ Requirements :
 * The tested class constructor must accept no parameters
 * The test class must call setUpSplSubject() with class name, and optionally observers name (example shows defaults)
 
-```
-<?php
-
+```php
 class MyClassTest extends TestCase
 {
     use Snailweb\Helpers\Tests\TestSplSubjectTrait;
