@@ -33,6 +33,7 @@ Helper to automatically apply Iterator tests for a class.
 
 Requirements :
 * The tested class must implement Iterator (that's the point of doing this ...)
+* The tested class constructor must accept no parameters
 * The test class must call setUpInterator() with class name, and optionally key name and array name (example shows defaults)
 
 ```
@@ -86,6 +87,7 @@ Helper to automatically apply SplSubject tests for a class.
 
 Requirements :
 * The tested class must implement SplSubject (that's the point of doing this ...)
+* The tested class constructor must accept no parameters
 * The test class must call setUpSplSubject() with class name, and optionally observers name (example shows defaults)
 
 ```

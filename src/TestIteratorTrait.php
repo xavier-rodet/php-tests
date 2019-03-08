@@ -13,7 +13,8 @@ trait TestIteratorTrait
 
     public function setUpIterator(string $iteratorClass, string $keyName = 'key', string $arrayName = 'array')
     {
-        $this->iteratorObject = new $iteratorClass(['a', 'b']);
+        $this->iteratorObject = new $iteratorClass();
+        $this->setAttribute($this->iteratorObject, $arrayName, ['a', 'b']);
         $this->keyName = $keyName;
         $this->arrayName = $arrayName;
     }
